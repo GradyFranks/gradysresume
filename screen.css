@@ -1,43 +1,6 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
-}
 body {
-    background:  #B7CECE;
-    font-family: Helvetica;
-    border-top: 15px solid #A67F8E; 
-    border-bottom: 15px solid #A67F8E; 
-    border-left:  15px solid #A67F8E; 
-    border-right:  15px solid #B7CECE; 
-    margin: 0 auto;
-}
-
-main {
-    margin: 0 auto;
-    width: 800px;
-}
-
-.details {
-    display: flex;
-    gap: 25px;
-}
-
-.details section {
-    flex-grow: 1;
-    flex-basis: 0;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 20px;
-    margin-top: 30px;
-    
-    }
-
-h2 {
-    margin: 0
-
-}
-p {
-    margin: 0
-    line-height: 1.4em;
-
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #B7CECE; /* Set background color */
 }
