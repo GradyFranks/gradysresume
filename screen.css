@@ -3,12 +3,12 @@ a.active {
     font-weight: bold;
 }
 body {
-    background: #D1F4B8;
+    background:  #B7CECE;
     font-family: Helvetica;
-    border-top: 15px solid #DBB8F4; 
-    border-bottom: 15px solid #DBB8F4; 
-    border-left:  15px solid #DBB8F4; 
-    border-right:  15px solid #c6f4b8; 
+    border-top: 15px solid #A67F8E; 
+    border-bottom: 15px solid #A67F8E; 
+    border-left:  15px solid #A67F8E; 
+    border-right:  15px solid #B7CECE; 
     margin: 0 auto;
 }
 
