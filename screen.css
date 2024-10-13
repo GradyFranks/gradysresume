@@ -1,0 +1,43 @@
+/* Add screen styles below */
+a.active {
+    font-weight: bold;
+}
+body {
+    background: #D1F4B8;
+    font-family: Helvetica;
+    border-top: 15px solid #DBB8F4; 
+    border-bottom: 15px solid #DBB8F4; 
+    border-left:  15px solid #DBB8F4; 
+    border-right:  15px solid #DBB8F4; 
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.details {
+    display: flex;
+    gap: 25px;
+}
+
+.details section {
+    flex-grow: 1;
+    flex-basis: 0;
+    background: #DBB8F4;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 30px;
+    
+    }
+
+h2 {
+    margin: 0
+
+}
+p {
+    margin: 0
+    line-height: 1.4em;
+
+}
