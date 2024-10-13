@@ -1,6 +1,24 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Change to a cooler font */
     margin: 20px;
-    text-align: center;
+    text-align: center; /* Center all text */
     background-color: #B7CECE; /* Set background color */
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 20px 0; /* Add gap between paragraphs */
 }
