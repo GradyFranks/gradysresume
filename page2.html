@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>About Me</title>
     <style>
         body {
             font-family: 'Gelasio', serif;
             margin: 0;
-            padding: 20px;
-            background-color: white;
-            background-image: url('photos/resume-background.jpg'); /* Replace with your background image */
+            padding: 0;
+            background-color: white; /* Fallback color */
+            background-image: url('photos/michigan-state-university.jpg'); /* Background image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            color: black;
+            color: white; /* Default text color */
+        }
+        .text-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .photo-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .photo-placeholder img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%; /* Circular shape */
+            border: 3px solid white; /* Optional border for better visibility */
+            object-fit: cover; /* Ensures the image fits within the circle */
         }
         .links {
             text-align: center;
@@ -26,23 +47,30 @@
             font-size: 18px;
             color: white;
             text-decoration: none;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent background for links */
             padding: 10px 20px;
             border-radius: 5px;
         }
         a:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
         }
     </style>
 </head>
 <body>
-    <h1>Resume</h1>
-    <p>
-        Add your resume content here.
-    </p>
+    <div class="text-section">
+        <h1>My Resume</h1>
+        <p>
+            Hello! I'm Grady Frankhouse, I am a fourth-year student at Michigan State University #GoGreen. Below is my resume!
+        </p>
+    </div>
+
+    <div class="photo-section">
+        <img src="photos/gggggg.png" alt="A photo of Grady" />
+    </div>
+
     <div class="links">
         <a href="index.html">Homepage</a>
-        <a href="page1.html">About Me</a> <!-- Corrected link to point to the About Me page -->
+        <a href="page2.html">About Me</a>
     </div>
 </body>
 </html>
