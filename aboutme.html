@@ -20,14 +20,17 @@
         .photo-section {
             display: flex;
             justify-content: center;
+            align-items: center;
             margin-top: 50px;
+            width: 100%;
+            height: 50vh; /* Adjust the height to fit within the screen */
         }
         .photo-section img {
-            width: 150px;
-            height: 150px;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             border: 3px solid white;
-            object-fit: cover;
+            object-fit: contain; /* Ensure the image fits inside the container without cropping */
         }
         .box {
             background-color: forestgreen;
