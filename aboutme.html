@@ -3,22 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Grady Frankhouse</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <title>About Me - Grady Frankhouse</title>
+    <style>
+        body {
+            font-family: 'Gelasio', serif;
+            margin: 0;
+            padding: 0;
+            background-color: white; /* Fallback color */
+            background-image: url('photos/background.jpg'); /* Replace with your background image */
+            background-size: cover; /* Ensure the image fills the screen */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            color: white; /* Default text color */
+        }
+        .photo-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .photo-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circular photo */
+            border: 3px solid white; /* Optional border for better visibility */
+            object-fit: cover; /* Ensures the image fits within the circle */
+        }
+        .content-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the boxes */
+            margin: 50px 20px; /* Margin around the content section */
+        }
+        .content-box {
+            background-color: forestgreen; /* Forest green background */
+            border-radius: 15px; /* Rounded corners */
+            padding: 20px;
+            flex: 1; /* Make boxes take equal width */
+            max-width: 400px; /* Limit box size */
+            color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for effect */
+        }
+        .links {
+            text-align: center;
+            margin-top: 30px;
+        }
+        a {
+            display: inline-block;
+            margin: 10px 20px;
+            font-size: 18px;
+            color: white; /* Link text color */
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for links */
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+        }
+    </style>
 </head>
 <body>
+    <!-- Circular Photo Section -->
+    <div class="photo-section">
+        <img src="photos/profile.jpg" alt="Your Photo" />
+    </div>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- Content Section -->
+    <div class="content-section">
+        <div class="content-box">
+            <h2>About Me</h2>
+            <p>Add your "About Me" text here.</p>
+        </div>
+        <div class="content-box">
+            <h2>Additional Info</h2>
+            <p>Add more details or personal interests here.</p>
+        </div>
+    </div>
 
-<h1>Contact Grady Frankhouse</h1>
-<p>
-    For inquiries regarding my projects, please reach out through the contact form on our website.
-</p>
-
+    <!-- Links Section -->
+    <div class="links">
+        <a href="index.html">Homepage</a>
+        <a href="page2.html">Resume</a>
+    </div>
 </body>
 </html>
