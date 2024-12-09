@@ -3,77 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Resume</title>
     <style>
         body {
             font-family: 'Gelasio', serif;
             margin: 0;
             padding: 0;
             background-color: white;
-            background-image: url('photos/NatSci_Bkgd_Green_Triangles_MSU-NatSci.jpg'); /* Replace with your background image */
-            background-size: contain; /* Ensure the entire image fits within the screen */
+            background-image: url('photos/michigan-state-university.jpg'); /* Replace with your background image */
+            background-size: cover;
             background-position: center;
-            background-repeat: no-repeat; /* Prevent repetition */
-            color: white; /* Default text color */
+            background-repeat: no-repeat;
+            color: white;
         }
-        .photo-section {
-            display: flex;
-            justify-content: center;
+        .content {
+            text-align: center;
             margin-top: 50px;
-        }
-        .photo-section img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid white;
-            object-fit: cover;
-        }
-        .box {
-            background-color: forestgreen;
-            border-radius: 15px;
-            margin: 20px auto;
             padding: 20px;
             max-width: 600px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-left: auto;
+            margin-right: auto;
         }
-        .links {
-            text-align: center;
-            margin-top: 30px;
+        h1, p, a {
+            font-size: 20px; /* Increased font size */
+            font-weight: bold; /* Bold text */
         }
         a {
-            display: inline-block;
-            margin: 10px 20px;
-            font-size: 18px;
             color: white;
             text-decoration: none;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for links */
             padding: 10px 20px;
             border-radius: 5px;
         }
         a:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
         }
     </style>
 </head>
 <body>
-    <div class="photo-section">
-        <img src="photos/your-photo.jpg" alt="Your Photo" />
-    </div>
-    <div class="box">
-        <h2>About Me</h2>
+    <div class="content">
+        <h1>Resume</h1>
         <p>
-            Add your biography or personal details here.
+            Welcome to my resume page. Here, you can learn more about my professional background and achievements.
         </p>
-    </div>
-    <div class="box">
-        <h2>More About My Journey</h2>
-        <p>
-            Add additional details about your experiences or story here.
-        </p>
-    </div>
-    <div class="links">
         <a href="index.html">Homepage</a>
-        <a href="page2.html">Resume</a>
+        <a href="page1.html">About Me</a>
     </div>
 </body>
 </html>
