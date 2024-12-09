@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grady Frankhouse's Website</title>
+    <title>Grady Frankhouse</title>
     <style>
         body {
             font-family: 'Gelasio', serif;
@@ -11,7 +11,7 @@
             padding: 20px;
             background-color: white; /* Fallback color */
             background-image: url('photos/IMG_6303.jpg'); /* Corrected to use the URL of the image */
-            background-size: cover; /* Make sure the image covers the entire background */
+            background-size: cover; /* Ensure the image scales to cover the full screen */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Prevent the image from repeating */
         }
@@ -31,31 +31,22 @@
             display: block;
             margin: 10px 0;
             font-size: 18px;
-            color: #007BFF;
+            color: white; /* Change link text color to white */
             text-decoration: none;
             padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for readability */
             border-radius: 5px; /* Rounded corners for links */
         }
         a:hover {
             text-decoration: underline;
-        }
-        .link-container {
-            border-bottom: 1px solid #ddd; 
-        }
-        .link-container:last-child {
-            border-bottom: none; 
         }
     </style>
 </head>
 <body>
     <div class="header">Grady Frankhouse</div>
     <div class="links">
-        <div class="link-container">
-            <a href="page1.html">About Me</a>
-        </div>
-        <div class="link-container">
-            <a href="page2.html">Resume</a>
-        </div>
+        <a href="page1.html">Aboot Me</a>
+        <a href="page2.html">Resume</a>
     </div>
 </body>
 </html>
