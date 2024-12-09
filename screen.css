@@ -1,24 +1,54 @@
-body {
-    font-family: 'Poppins', sans-serif; /* Change to a cooler font */
-    margin: 20px;
-    text-align: center; /* Center all text */
-    background-color: #B7CECE; /* Set background color */
-}
-
-nav {
-    margin-bottom: 20px;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: blue;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-p {
-    margin: 20px 0; /* Add gap between paragraphs */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grady Frankhouse's Website</title>
+    <style>
+        body {
+            font-family: 'Gelasio', serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white; /* Set white background */
+        }
+        .header {
+            font-size: 36px;
+            font-family: 'Gelasio', serif;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .links {
+            margin-top: 70px; /* Add some space below the header */
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: none;
+            padding: 10px 0;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .link-container {
+            border-bottom: 1px solid #ddd; /* Add a line below each link */
+        }
+        .link-container:last-child {
+            border-bottom: none; /* Remove line after the last link */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Grady Frankhouse</div>
+    <div class="links">
+        <div class="link-container">
+            <a href="page1.html">Go to Page 1</a>
+        </div>
+        <div class="link-container">
+            <a href="page2.html">Go to Page 2</a>
+        </div>
+    </div>
+</body>
+</html>
