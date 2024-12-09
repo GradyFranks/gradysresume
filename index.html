@@ -10,33 +10,37 @@
             margin: 0;
             padding: 20px;
             background-color: white; /* Fallback color */
-            background-image: url('photos/IMG_6303.jpg'); /* Corrected to use the URL of the image */
-            background-size: cover; /* Ensure the image scales to cover the full screen */
+            background-image: url('photos/IMG_6303.jpg'); /* URL of the image */
+            background-size: cover; /* Ensure the image fills the screen */
             background-position: center; /* Center the image */
             background-repeat: no-repeat; /* Prevent the image from repeating */
+            color: white; /* Default text color for visibility */
         }
         .header {
             font-size: 36px;
-            font-family: 'Gelasio', serif;
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 20px;
+            left: 20px;
             color: #ffffff; /* Adjust text color for contrast */
-            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Optional text shadow for readability */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
         }
         .links {
-            margin-top: 70px; /* Add some space below the header */
+            margin-top: 100px; /* Space below the header */
+            text-align: left; /* Align links to the left */
+            padding-left: 20px;
         }
         a {
-            display: block;
+            display: inline-block;
             margin: 10px 0;
-            font-size: 18px;
-            color: white; /* Change link text color to white */
+            font-size: 20px;
+            color: white; /* Link text color */
             text-decoration: none;
-            padding: 10px 0;
-
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for links */
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
         a:hover {
-            text-decoration: underline;
+            background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
         }
     </style>
 </head>
