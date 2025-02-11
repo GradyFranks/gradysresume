@@ -30,13 +30,14 @@
             justify-content: center;
             align-items: center;
             margin-top: 50px;
+            gap: 20px; /* Adds spacing between the images */
         }
-        .photo-placeholder img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            border: 3px solid white;
-            object-fit: cover;
+        .photo-section img {
+            width: 45%; /* Adjusts size while maintaining aspect ratio */
+            max-width: 300px; /* Ensures they are not too large */
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid white;
         }
         .links {
             text-align: center;
@@ -66,8 +67,8 @@
     </div>
 
     <div class="photo-section">
-        <img src="photos/TRP1.png." alt="First Resume Page">
-        <img src="photos/TRP2.png" alt="Second Resume Page"
+        <img src="photos/TRP1.png" alt="First Resume Page">
+        <img src="photos/TRP2.png" alt="Second Resume Page">
     </div>
 
     <div class="links">
