@@ -6,100 +6,79 @@
     <title>About Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        * { box-sizing: border-box; }
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: white;
-            background-image: url('photos/MSUbackgrund.png'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background: white url('photos/MSUbackgrund.png') center/cover no-repeat;
             color: white;
-            position: relative;
             min-height: 100vh;
         }
         .photo-section {
             display: flex;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 20px;
         }
         .photo-section img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             border: 3px solid white;
             object-fit: cover;
         }
         .box {
-            background-color: forestgreen;
+            background-color: rgba(34, 139, 34, 0.9);
             border-radius: 15px;
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 600px;
+            margin: 15px auto;
+            padding: 15px;
+            max-width: 90%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        .links {
+        .links, .left-links {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
         }
         a {
             display: inline-block;
-            margin: 10px 20px;
-            font-size: 18px;
+            margin: 8px 10px;
+            font-size: 16px;
             color: white;
             text-decoration: none;
             background-color: rgba(0, 0, 0, 0.6);
-            padding: 10px 20px;
+            padding: 8px 15px;
             border-radius: 5px;
         }
-        a:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* New section for the links on the left */
+        a:hover { background-color: rgba(0, 0, 0, 0.8); }
         .left-links {
             position: fixed;
-            left: 20px;
+            left: 10px;
             top: 50%;
-            transform: translateY(-50%); /* Centers vertically */
-            font-size: 18px;
+            transform: translateY(-50%);
         }
-        .left-links a {
-            display: block;
-            margin: 10px 0;
-            color: white; /* Ensures links are white */
-            text-decoration: none;
-        }
-        .left-links a:hover {
-            color: rgba(0, 0, 0, 0.8);
+        @media (max-width: 414px) {
+            .photo-section img { width: 100px; height: 100px; }
+            .box { padding: 12px; }
+            a { font-size: 14px; padding: 6px 12px; }
+            .left-links { position: static; transform: none; margin-top: 10px; }
         }
     </style>
 </head>
 <body>
     <div class="photo-section">
         <img src="photos/IMG_8388.jpg" alt="My Photo">
-        </div>
+    </div>
     <div class="box">
         <h2>A Little About Me</h2>
-        <p>
-            Hi all! This handsome devil pictured above is yours truly! I am from Southeast Michigan and love to watch movies, listen to music, play sports with my friends and many more exciting activites. I found my love for coding through my father who is a lead software engineer at GM. I hope you enjoy my website!
-
-        </p>
+        <p>Hi all! I'm from Southeast Michigan and enjoy movies, music, and sports. My love for coding comes from my father, a lead software engineer at GM. Enjoy my site!</p>
     </div>
     <div class="box">
-        <h2>Other fun facts</h2>
-        <p>
-            I am very interested in Data Analytics and Investing. I am apart of several communities on the internet regarding the trading and buying of stocks. Along with investing, I love to collect Vinyl Records. I have roughly 70+ records and spend all day listening to various genres.
-
-        </p>
+        <h2>Other Fun Facts</h2>
+        <p>I am passionate about Data Analytics and Investing. I collect over 70 vinyl records and spend hours exploring different genres.</p>
     </div>
-
-    <!-- Left side links -->
     <div class="left-links">
         <a href="https://testforblog.netlify.app/">Blog Project</a>
-        
     </div>
-
     <div class="links">
         <a href="index.html">Homepage</a>
         <a href="page2.html">Resume</a>
