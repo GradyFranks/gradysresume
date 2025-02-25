@@ -1,47 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grady Frankhouse's Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gelasio&display=swap" rel="stylesheet">
-    <style>
-        * { box-sizing: border-box; }
-        body {
-            font-family: 'Gelasio', serif;
-            margin: 0;
-            padding: 20px;
-            background-color: white;
-        }
+<style>
+    * { 
+        box-sizing: border-box; 
+    }
+
+    body {
+        font-family: 'Gelasio', serif;
+        margin: 0;
+        padding: 20px;
+        background-color: white;
+    }
+
+    .header {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .links {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+        color: #007BFF;
+        text-decoration: none;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    a:hover { 
+        text-decoration: underline; 
+    }
+
+    /* ERROR 1: .link-container selector was unused */
+    /* FIX: Removed the unnecessary .link-container selector */
+
+    @media (max-width: 414px) {
+        /* ERROR 2: The header font size adjustment was too small */
+        /* FIX: Adjusted font-size for better readability */
         .header {
-            font-size: 28px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
+            font-size: 26px;
         }
-        .links {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
-        }
+
+        /* ERROR 3: Anchor padding inconsistency on mobile */
+        /* FIX: Made padding uniform for better tap targets */
         a {
-            display: block;
-            margin: 10px 0;
-            font-size: 16px;
-            color: #007BFF;
-            text-decoration: none;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+            padding: 10px 12px;
         }
-        a:hover { text-decoration: underline; }
-        .link-container:last-child a { border-bottom: none; }
-    </style>
-</head>
-<body>
-    <div class="header">Grady Frankhouse</div>
-    <div class="links">
-        <a href="page1.html">Go to Page 1</a>
-        <a href="page2.html">Go to Page 2</a>
-    </div>
-</body>
-</html>
+    }
+</style>
